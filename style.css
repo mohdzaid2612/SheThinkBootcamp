@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 768px) {
   .logo {
-    width: 30%;
+    width: 45%;
     /* height: 15%; */
     cursor: pointer;
   }
@@ -227,7 +227,7 @@ body {
     width: 100%;
     flex-direction: column-reverse;
     justify-content: center;
-    margin-top: 0%;
+    margin-top: 00%;
   }
   .big_circle {
     position: absolute;
@@ -250,7 +250,8 @@ body {
   .info {
     display: grid;
     place-items: center;
-    height: auto;
+    /* height: auto; */
+    height: 100px;
   }
   .info h3 {
     font-size: 1rem;
@@ -281,7 +282,7 @@ body {
   .imagearea {
     width: 100%;
     /* overflow: hidden; */
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 10%;
   }
   .poster_portion {
@@ -318,7 +319,7 @@ body {
     margin-top: 4%;
   }
   .info {
-    height: auto;
+    height: 70px;
   }
   .info h3 {
     font-size: 0.7rem;
@@ -849,6 +850,9 @@ body {
 }
 .price {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .offer_price {
   width: 45px;
@@ -1016,6 +1020,7 @@ body {
   }
   .course_sign {
     width: 100%;
+    margin-bottom: 8%;
   }
   .course_card,
   .course_details {
@@ -1080,6 +1085,30 @@ body {
   .course_info button {
     width: 70%;
     font-size: 1rem;
+  }
+  .price {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .offer_price {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ededed;
+    padding: 0.1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  }
+  .offer_price img {
+    width: 100%;
+    margin-right: 3%;
   }
 }
 
@@ -1236,8 +1265,8 @@ body {
   }
 }
 
-@media (max-width:440px){
-  .contact_info{
+@media (max-width: 440px) {
+  .contact_info {
     margin-top: 20%;
   }
 }
@@ -1349,8 +1378,8 @@ body {
   width: 75%;
   object-fit: contain;
 }
-.img h4{
-  font-family: 'Nunito';
+.img h4 {
+  font-family: "Nunito";
 }
 
 .profile {
