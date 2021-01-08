@@ -9,8 +9,6 @@
 
 body {
   background-color: #fff;
-  /* position: relative; */
-  /* overflow: hidden; */
 }
 
 .body.formDisplay {
@@ -23,7 +21,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
+  z-index: 100;
 }
 
 .header_section {
@@ -45,8 +43,9 @@ body {
 }
 .logo {
   width: 20%;
-  /* height: 15%; */
   cursor: pointer;
+  background-color: transparent;
+  z-index: -1;
 }
 .logo img {
   width: 80%;
@@ -251,7 +250,7 @@ body {
   .info {
     display: grid;
     place-items: center;
-    height: 50px;
+    height: auto;
   }
   .info h3 {
     font-size: 1rem;
@@ -319,7 +318,7 @@ body {
     margin-top: 4%;
   }
   .info {
-    height: 50px;
+    height: auto;
   }
   .info h3 {
     font-size: 0.7rem;
@@ -336,6 +335,7 @@ body {
   align-items: center;
   margin-top: 10%;
   margin-bottom: 2%;
+  overflow: hidden;
 }
 .success {
   width: 90%;
@@ -650,6 +650,7 @@ body {
   align-items: center;
   margin-bottom: 0%;
   position: relative;
+  overflow: hidden;
 }
 .apply_info {
   width: 90%;
@@ -812,13 +813,108 @@ body {
 .course_info h2 {
   margin: 1.1rem 0 0.2rem 0;
   font-family: "Nunito";
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 .course_info p {
   font-family: "Nunito";
   font-size: 1rem;
   margin-bottom: 0.6rem;
   color: #999;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course_info h3 {
+  font-family: "NUnito";
+  background-color: #ec4d37;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.duration h2,
+.Prerequisites h2 {
+  font-family: "Nunito";
+  font-size: 1.1rem;
+  color: #777;
+}
+.price {
+  position: relative;
+}
+.offer_price {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ededed;
+  padding: 0.1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.offer_price img {
+  width: 100%;
+  margin-right: 3%;
+}
+.offer_price h4 {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ec4d37;
+  margin-right: 0%;
+  z-index: 100;
+}
+
+.price h2 {
+  font-size: 2rem;
+}
+.price h2 b {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #999;
+}
+.duration h4,
+.Prerequisites h4 {
+  font-family: "Nunito";
+  font-size: 1.3rem;
+}
+.duration h4 b,
+.Prerequisites h4 b {
+  color: #777;
+  font-weight: lighter;
+}
+.differentiate {
+  margin-top: 3%;
+  border: 1px solid #ededed;
+}
+.course_details_points {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.course_details_points ul {
+  list-style: none;
+}
+.course_details_points ul li {
+  margin: 0.5rem 0;
+  font-family: "Nunito";
+}
+.course_details_points ul li::before {
+  content: "\f005";
+  font-family: "fontAwesome";
+  color: #ec4d37;
 }
 .course_points {
   display: flex;
@@ -987,6 +1083,16 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .course_info h3 {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .course_details_points ul li {
+    font-size: 0.9rem;
+  }
+}
+
 /* contact form  */
 .contact_form {
   position: fixed;
@@ -1129,6 +1235,12 @@ body {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width:440px){
+  .contact_info{
+    margin-top: 20%;
+  }
+}
 /* Testimonials  */
 .all_testimonials {
   width: 100%;
@@ -1151,21 +1263,25 @@ body {
 }
 .student_image {
   width: 20%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
-  background-color: #ededed;
-  padding: 0.7rem;
+  /* background-color: #ededed; */
+  /* padding: 0.7rem; */
   margin: 0 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
 }
 .student_image img {
-  width: 100%;
-  object-fit: cover;
+  width: 80%;
+  object-fit: contain;
+  /* border-radius: 50%; */
 }
 .student_info {
-  width: 70%;
+  width: 75%;
 }
 .student_info h3 {
   font-family: "Nunito";
@@ -1176,6 +1292,8 @@ body {
   font-family: "Nunito";
   font-weight: 100;
   line-height: 1;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 /* Tutors  */
@@ -1219,7 +1337,7 @@ body {
   width: 30%;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background-color: #ededed;
@@ -1231,8 +1349,8 @@ body {
   width: 75%;
   object-fit: contain;
 }
-.img h4 {
-  font-family: "Nunito";
+.img h4{
+  font-family: 'Nunito';
 }
 
 .profile {
@@ -1292,9 +1410,9 @@ body {
   padding: 0.5rem;
 }
 .tutor_images img {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .tutor_name {
   margin-left: 5%;
@@ -1487,7 +1605,7 @@ body {
   position: relative;
 }
 .Image_background img {
-  width: 120%;
+  width: 100%;
   z-index: 1;
 }
 /* .square_bg {
@@ -1503,14 +1621,14 @@ body {
   padding-right: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
 }
 .footer_points {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 2%;
 }
 .company_points h1,

@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "jupyter.useDefaultConfigForJupyter": false,
+  "emmet.extensionsPath": "",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
