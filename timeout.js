@@ -1,5 +1,5 @@
 setTimeout(() => {
-  $(".contact_form").toggleClass("formDisplay");
-  $(".overlay").toggleClass("formDisplay");
-  $(".body").toggleClass("formDisplay");
-}, 20000);
+  $(".contact_form").addClass("formDisplay");
+  $(".overlay").addClass("formDisplay");
+  $(".body").addClass("formDisplay");
+}, 25000);

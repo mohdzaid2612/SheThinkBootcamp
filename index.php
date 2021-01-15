@@ -9,8 +9,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Bootcamp</title>
-
+    <link rel="icon"  type="image/x-icon" href="./logo.ico"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,14 +34,11 @@
           <img src="./logo.png" class="logoImage" />
         </div>
         <div class="menu_options">
-          <!-- <ul class="list">
-            <li><a href="$">FAQ</a></li>
-            <li><a href="$">Contact</a></li>
-            <li><a href="$">About Us</a></li>
-          </ul> -->
+          <button class="form_open">Become a Campus Embassador</button>
         </div>
       </div>
     </section>
+    
     <section class="landing_page">
       <div class="landing">
         <div class="textarea" data-aos="fade-right" data-aos-duration="3000">
@@ -53,7 +51,7 @@
           </div>
           <div class="offer_valid">
             <i class="fa fa-gift" aria-hidden="true"></i>
-            <h3>Discount upto <b> 33% for first 25 students. </b></h3>
+            <h3>Lucrative offers on <b>First Come First Serve</b> basis. </b></h3>
           </div>
           <div class="poster_portion">
             <img src="./landing_poster.png" alt="" />
@@ -65,7 +63,7 @@
             <div class="card card1" data-aos="zoom-in" data-aos-duration="1000">
               <div class="info">
                 <h3>
-                  480+ hours Offline
+                  480+ hours
                   <b>Intensive Training.</b>
                 </h3>
               </div>
@@ -281,20 +279,17 @@
               </p>
               <div id="flipdown" class="flipdown"></div>
               <div class="price">
-                <div class="offer_price">
+                <!-- <div class="offer_price">
                   <img src="./offer.png" alt="" />
                   <h4>33%</h4>
-                </div>
+                </div> -->
                 <h3 class="forwebText">
                   Make 2021 <br />
                   your Year of <br />
                   Doing!
                 </h3>
                 <h3 class="forMobileText">Make 2021 your Year of Doing!</h3>
-                <h2>
-                  ₹7,999
-                  <b>₹11,999</b>
-                </h2>
+                <button>Know the Price</button>
               </div>
 
               <div class="duration">
@@ -711,6 +706,7 @@
         $(".success_display").css("display", "none");
         $(".overlaySuccess").css("display", "none");
       });
+
     });
     $(".owl-carousel").owlCarousel({
       loop: true,

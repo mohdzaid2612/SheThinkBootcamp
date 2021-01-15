@@ -51,39 +51,45 @@ body {
 .header {
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .logo {
-  width: 20%;
+  width: 50%;
   cursor: pointer;
   background-color: transparent;
   z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .logo img {
-  width: 80%;
+  width: 40%;
   height: 100%;
   object-fit: contain;
 }
 .menu_options {
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 50%;
 }
-.list {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  list-style: none;
-  align-items: center;
+.menu_options button {
+  padding: 1.5%;
+  font-size: 14px;
+  font-family: "Poppins";
+  line-height: 1.3;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ec4d37;
+  border-radius: 5px;
+  cursor: pointer !important;
+  transition: 0.3s ease-in-out;
+  color: #000;
 }
-.list a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-family: "Nunito";
-  color: black;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: 0 10px;
+.menu_options button:hover {
+  background-color: #ec4d37;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -96,6 +102,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+@media (max-width: 525px) {
+  .menu_options button {
+    font-size: 10px;
   }
 }
 
@@ -181,9 +192,13 @@ body {
 }
 
 .info h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Nunito";
   font-weight: 200;
+}
+.info b {
+  font-size: 1.4rem;
+  font-family: "Nunito";
 }
 
 .button {
